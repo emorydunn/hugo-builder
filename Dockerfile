@@ -9,8 +9,9 @@ RUN set -ex && \
 
 RUN wget -q https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz && \
     echo "${HUGO_MD5SUM}  hugo_${HUGO_VERSION}_Linux-64bit.tar.gz" | md5sum -c && \
-    tar xf hugo_${HUGO_VERSION}_Linux-64bit.tar.gz && \
-    cp hugo_${HUGO_VERSION}_linux_amd64/hugo_${HUGO_VERSION}_linux_amd64 /usr/bin/hugo && \
+    mkdir hugo_${HUGO_VERSION}_linux_amd64 && \
+    tar xf hugo_${HUGO_VERSION}_Linux-64bit.tar.gz -C hugo_${HUGO_VERSION}_linux_amd64 && \
+    cp hugo_${HUGO_VERSION}_linux_amd64/hugo /usr/bin/hugo && \
     rm -rf hugo_${HUGO_VERSION}_linux_amd64 && \
     rm -f hugo_${HUGO_VERSION}_linux_amd64.tar.gz
 
