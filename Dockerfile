@@ -1,8 +1,8 @@
 FROM alpine:3.4
 MAINTAINER Avi Miller <avi.miller@gmail.com>
 
-ENV HUGO_VERSION=0.18.1 \
-    HUGO_MD5SUM=e8ba723c508e87912970f132534c64dc
+ENV HUGO_VERSION=0.48 \
+    HUGO_MD5SUM=c7956b07ac50c6da6229a646add62e92
 
 RUN set -ex && \
     apk add --no-cache openssl openssh-client git py-pygments
