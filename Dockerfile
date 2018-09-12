@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine:3.8
 MAINTAINER Emory Dunn <edunn@emorydunn.com>
 
 ENV HUGO_VERSION=0.48 \
