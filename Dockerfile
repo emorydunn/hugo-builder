@@ -5,7 +5,7 @@ ENV HUGO_VERSION=0.48 \
     HUGO_MD5SUM=c7956b07ac50c6da6229a646add62e92
 
 RUN set -ex && \
-    apk add --no-cache openssl openssh-client git git-lfs py-pygments
+    apk add --no-cache openssl openssh-client git git-lfs py-pygments rsync
 
 RUN wget -q https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz && \
     echo "${HUGO_MD5SUM}  hugo_${HUGO_VERSION}_Linux-64bit.tar.gz" | md5sum -c && \
