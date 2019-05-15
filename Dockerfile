@@ -2,7 +2,7 @@ FROM alpine:3.8
 MAINTAINER Emory Dunn <edunn@emorydunn.com>
 
 ENV HUGO_VERSION=0.55.5 \
-    HUGO_MD5SUM=c7956b07ac50c6da6229a646add62e92
+    HUGO_MD5SUM=a2bfa39d9425d2265ecf34c15afbe277
 
 RUN set -ex && \
     apk add --no-cache openssl openssh-client git git-lfs py-pygments rsync
