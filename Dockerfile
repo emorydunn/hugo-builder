@@ -1,7 +1,7 @@
 FROM alpine:3.8
 MAINTAINER Emory Dunn <edunn@emorydunn.com>
 
-ENV HUGO_VERSION=0.48 \
+ENV HUGO_VERSION=0.55.5 \
     HUGO_MD5SUM=c7956b07ac50c6da6229a646add62e92
 
 RUN set -ex && \
